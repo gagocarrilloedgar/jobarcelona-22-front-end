@@ -1,0 +1,4 @@
+.scrollBoxContainer {
+  width: 600px;
+  overflow-x: scroll;
+}
