@@ -6,7 +6,11 @@ import "./ScrollBox.css";
 const ScrollBox = () => {
   return (
     <article className="scrollBoxContainer">
-      <Card title="Example" />
+      <Card
+        description="Example description"
+        tags={["Article", "More Articles"]}
+        title="Example"
+      />
     </article>
   );
 };

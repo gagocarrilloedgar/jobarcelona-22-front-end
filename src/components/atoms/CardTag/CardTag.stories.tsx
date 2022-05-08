@@ -13,8 +13,8 @@ const Template: ComponentStory<typeof CardTag> = (args) => (
   <CardTag {...args} />
 );
 
-export const Example = Template.bind({});
+export const Tag = Template.bind({});
 
-Example.args = {
-  children: "This is the card description",
+Tag.args = {
+  children: "Tag example",
 };
