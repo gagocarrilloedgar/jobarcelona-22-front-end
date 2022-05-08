@@ -1,0 +1,7 @@
+.tagWrapper {
+  padding: 0.25em 1em;
+  text-align: center;
+  background-color: green;
+  color: white;
+  border-radius: 30px;
+}

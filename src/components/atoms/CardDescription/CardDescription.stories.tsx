@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 import CardDescription from "./CardDescription";
 
 const componentInfo = {
-  title: "CardTitle",
+  title: "CardDescription",
   component: CardDescription,
 } as ComponentMeta<typeof CardDescription>;
 
