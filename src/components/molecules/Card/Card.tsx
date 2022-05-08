@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 // atom components
 import CardTitle from "../../atoms/CardTitle/CardTitle";
 import CardDescription from "../../atoms/CardDescription/CardDescription";
@@ -13,8 +13,17 @@ interface Props {
 }
 
 const Card: React.FC<Props> = ({ title, description, tags }) => {
+  const [isFocused, setIsFocused] = useState(false);
+  const handleCardClick = () => {
+    setIsFocused(!isFocused);
+    // do things here
+  };
   return (
-    <section className="cardWrapper">
+    <section
+      role="button"
+      onClick={handleCardClick}
+      className={isFocused ? "cardWrapper cardFocused" : "cardWrapper"}
+    >
       <CardTitle>{title}</CardTitle>
       <CardDescription>{description}</CardDescription>
       <div className="tagContainer">

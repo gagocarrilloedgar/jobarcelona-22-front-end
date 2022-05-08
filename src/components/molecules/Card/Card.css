@@ -8,6 +8,10 @@
   background-color: white;
   border-radius: 5px;
 }
+.cardFocused {
+  background-color: #dcd5ff;
+  border-color: #9a86ff;
+}
 .tagContainer {
   display: inline-flex;
   flex-wrap: wrap;

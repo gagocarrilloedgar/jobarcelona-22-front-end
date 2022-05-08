@@ -11,9 +11,9 @@ export default componentInfo;
 
 const Template: ComponentStory<typeof Card> = (args) => <Card {...args} />;
 
-export const CardUnfocused = Template.bind({});
+export const CardExample = Template.bind({});
 
-CardUnfocused.args = {
+CardExample.args = {
   title: "Party 🥳",
   description: "This is party description",
   tags: ["Laughs", "party"],
