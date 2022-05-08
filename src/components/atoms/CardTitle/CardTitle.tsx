@@ -5,7 +5,7 @@ interface Props {
 }
 
 const CardTitle: React.FC<Props> = ({ children }) => {
-  return <h3 className="Title">{children}</h3>;
+  return <h2 className="Title">{children}</h2>;
 };
 
 export default CardTitle;
