@@ -1,10 +1,6 @@
-import React, { ReactNode } from "react";
+import React from "react";
 
-interface Props {
-  children: JSX.Element[] | JSX.Element | ReactNode;
-}
-
-const CardTitle: React.FC<Props> = ({ children }) => {
+const CardTitle: React.FC<IChildren> = ({ children }) => {
   return <h2 className="Title">{children}</h2>;
 };
 
