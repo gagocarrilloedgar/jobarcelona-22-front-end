@@ -1,4 +1,14 @@
 .scrollBoxContainer {
-  width: 600px;
-  overflow-x: scroll;
+  padding: 1em;
+  display: inline-flex;
+  gap: 1em;
+  max-height: 500px;
+  max-width: 900px;
+  overflow: auto;
+}
+
+@media screen and (max-width: 1000px) {
+  .scrollBoxContainer {
+    flex-direction: column;
+  }
 }

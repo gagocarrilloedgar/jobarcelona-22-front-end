@@ -1,5 +1,7 @@
+import React from "react";
+// types
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-
+// component
 import CardTag from "./CardTag";
 
 const componentInfo = {

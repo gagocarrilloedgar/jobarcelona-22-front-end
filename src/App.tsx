@@ -1,16 +1,13 @@
 import React from "react";
 import "./App.css";
 
-import Card from "./components/molecules/Card/Card";
+import ScrollBox from "./components/organism/ScrollBox/ScrollBox";
 
 function App() {
   return (
     <div className="App">
-      <Card
-        description="Example description"
-        tags={["Article", "More articles", "and..?"]}
-        title="Example"
-      />
+      <h1>JOBARCELONA '22</h1>
+      <ScrollBox />
     </div>
   );
 }
