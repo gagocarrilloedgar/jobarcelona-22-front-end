@@ -2,7 +2,7 @@ import "@testing-library/jest-dom/extend-expect";
 import { render } from "@testing-library/react";
 import Card from "./Card";
 
-describe("CardTitle", () => {
+describe("Card", () => {
   it("render with props", () => {
     const title = "This card has title";
     const description = "This card has description";
