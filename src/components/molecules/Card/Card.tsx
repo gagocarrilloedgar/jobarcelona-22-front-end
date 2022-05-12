@@ -12,7 +12,11 @@ interface Props {
   tags: [] | Array<string>;
 }
 
-const Card: React.FC<Props> = ({ title, description, tags }) => {
+const Card: React.FC<Props> = ({
+  title = "Default card",
+  description = "Default description",
+  tags,
+}) => {
   const [isFocused, setIsFocused] = useState(false);
   const handleCardClick = () => {
     setIsFocused(!isFocused);
