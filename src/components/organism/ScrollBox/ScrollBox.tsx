@@ -14,7 +14,7 @@ const ScrollBox: React.FC = () => {
       <Card
         title="Family"
         description="Example description"
-        tags={["Article", "More Articles"]}
+        tags={["Article", "More Articles", "Testing scrolling tags"]}
       />
       <Card
         title="Friends"

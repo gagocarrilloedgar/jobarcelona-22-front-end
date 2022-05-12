@@ -1,8 +1,11 @@
 .tagWrapper {
   padding: 0.25em 1em;
+  max-width: 200px;
   text-align: center;
   background-color: green;
   color: white;
   border-radius: 30px;
   font-size: 13px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
