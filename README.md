@@ -13,23 +13,40 @@ It basically render a ScrollBox with many cards inside of it, with horizontal sc
 
 <img src="src/assets/FinalResultCapture.png" alt="Proposed challenge" />
 
-## Usage
+## Atomic design
 
-Antes de comenzar a profundizar en los documentos de la API/Componente, sería genial ver cómo se ve el módulo en acción. Así puedo determinar rápidamente si el JS de ejemplo se ajusta al estilo y al problema deseados. La gente tiene muchas opiniones sobre cosas como promesas / devoluciones de llamada y ES6. Si se ajusta a los requisitos, entonces puedo proceder con más detalles.
+This project was done using an atomic design, which components folder have specific structure:
 
-## API/Component
+    .
+    ├── components                  # This folder stores all the components.
+    │   ├── atoms                   # Small components, like tags, title or descriptions
+    │   ├── molecules               # Containers or wrappers, in this case will be the card component.
+    │   └── organism                # These are sections of the page or template, in this case will be the ScrollBox
+    └── ...
 
-El nombre, la descripción y el uso de este módulo me parecen atractivos. Es muy probable que utilice este módulo en este momento. Solo necesito escanear la API para asegurarme de que haga exactamente lo que necesito y que se integre fácilmente en mi base de código.
+> The atoms are designed as follows:
 
-La sección de API debe detallar los objetos y funciones del módulo, sus firmas, tipos de devolución, devoluciones de llamada y eventos en detalle. Los tipos deben incluirse donde no sean obvios. Deben dejarse claras las advertencias.
+```shell
+    # it receives children for params (controlled with types)
+
+    import React from "react";
+    # this component renders the title of the card, the value passes for children
+    const CardTitle: React.FC<IChildren> = ({ children }) => {
+        return <h2 className="Title">{children}</h2>;
+    };
+
+export default CardTitle;
+
+
+```
 
 ## Installation
 
 ### Languages and tools
 
-[<img align="left" alt="Visual Studio Code" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" style="padding-right:10px;" />][webdevplaylist]
-[<img align="left" alt="React" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" style="padding-right:10px;" />][reactplaylist]
-[<img align="left" alt="CSS3" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" style="padding-right:10px;" />][cssplaylist]
+[<img align="left" alt="Visual Studio Code" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" style="padding-right:10px;" />
+[<img align="left" alt="React" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" style="padding-right:10px;" />
+[<img align="left" alt="CSS3" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" style="padding-right:10px;" />
 
 Dentro de un ecosistema en particular, puede haber una forma común de instalar cosas, como usar Yarn, NuGet o Homebrew. Sin embargo, considere la posibilidad de que quien esté leyendo su archivo README sea un novato y desee más orientación. Enumerar los pasos específicos ayuda a eliminar la ambigüedad y hace que las personas usen su proyecto lo más rápido posible. Si solo se ejecuta en un contexto específico, como una versión de lenguaje de programación o un sistema operativo en particular, o tiene dependencias que deben instalarse manualmente, agregue también una subsección de Requisitos.
 
@@ -46,6 +63,8 @@ Dentro de un ecosistema en particular, puede haber una forma común de instalar 
     npm run start
     # test command
     npm run test
+    # run storybook documentation
+    npm run storybook
 ```
 
 ## License
