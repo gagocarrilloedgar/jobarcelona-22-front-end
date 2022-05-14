@@ -6,13 +6,7 @@ import CardTag from "../../atoms/CardTag/CardTag";
 // styles
 import "./Card.css";
 
-interface Props {
-  title: string;
-  description: string;
-  tags: [] | Array<string>;
-}
-
-const Card: React.FC<Props> = ({
+const Card: React.FC<ICard> = ({
   title = "Default card",
   description = "Default description",
   tags,

@@ -1,33 +1,9 @@
 import React from "react";
-import Card from "../../molecules/Card/Card";
 
 import "./ScrollBox.css";
 
-const ScrollBox: React.FC = () => {
-  return (
-    <article className="scrollBoxContainer">
-      <Card
-        title="Crew"
-        description="Example description"
-        tags={["Article", "More Articles"]}
-      />
-      <Card
-        title="Family"
-        description="Example description"
-        tags={["Article", "More Articles", "Testing scrolling tags"]}
-      />
-      <Card
-        title="Friends"
-        description="Example description"
-        tags={["Article", "More Articles"]}
-      />
-      <Card
-        title="Others"
-        description="Example description"
-        tags={["Article", "More Articles"]}
-      />
-    </article>
-  );
+const ScrollBox: React.FC<IScrollBox> = ({ children }) => {
+  return <article className="scrollBoxContainer">{children}</article>;
 };
 
 export default ScrollBox;
