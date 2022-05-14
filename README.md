@@ -1,13 +1,17 @@
-# JOBarcelona '22 | Front end
+# JOBarcelona '22 | Gift list Front-end
 
-Scroll box : utilizar nombres que sean facilmente identificables para personas que puedan llegar a tener interés en ese modulo o que estén buscando algo similar.
+> This project was realized for the JOBarcelona '22 Hackaton front-end category.
+> Consists of allowing its users to create gift lists and customize them.
 
-> Breve descripción del proyecto, más o menos 15 - 20 palabras:
+It basically render a ScrollBox with many cards inside of it, with horizontal scroller in PC resolution, but in Mobile resolution the scroll changes to vertically.
 
-Define la uilidad básica del modulo para que easí la gente que tenía dudas respecto al título pueda salir de ellas y decidir si seguir leyendo.
+### Proposed challenge
 
-**Badges (opcional)**
-En algunos archivos READMEs, es posible que hayas visto pequeñas imágenes que transmiten metadatos, como si todas las pruebas están pasando o no para el proyecto. Puedes usar [Shields](http://shields.io/) para agregar algunos a tu README. Muchos servicios también tienen instrucciones para agregar una insignia.
+<img src="src/assets/ChallengeCapture.png" alt="Proposed challenge" />
+
+### Final result
+
+<img src="src/assets/FinalResultCapture.png" alt="Proposed challenge" />
 
 ## Usage
 
@@ -21,17 +25,27 @@ La sección de API debe detallar los objetos y funciones del módulo, sus firmas
 
 ## Installation
 
+### Languages and tools
+
+[<img align="left" alt="Visual Studio Code" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" style="padding-right:10px;" />][webdevplaylist]
+[<img align="left" alt="React" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" style="padding-right:10px;" />][reactplaylist]
+[<img align="left" alt="CSS3" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" style="padding-right:10px;" />][cssplaylist]
+
 Dentro de un ecosistema en particular, puede haber una forma común de instalar cosas, como usar Yarn, NuGet o Homebrew. Sin embargo, considere la posibilidad de que quien esté leyendo su archivo README sea un novato y desee más orientación. Enumerar los pasos específicos ayuda a eliminar la ambigüedad y hace que las personas usen su proyecto lo más rápido posible. Si solo se ejecuta en un contexto específico, como una versión de lenguaje de programación o un sistema operativo en particular, o tiene dependencias que deben instalarse manualmente, agregue también una subsección de Requisitos.
 
 ```shell
-    # Clone or install commands
-    npm i [project] o npm/yarn i
+    # Clone repository
+    git clone https://github.com/LuisMM24/jobarcelona-22-front-end
+
+    # install dependencies
+    npm i  o npm/yarn i
 ```
 
 ```shell
-    # test o run commands
-    npm start
-    npm run dev ...
+    # run
+    npm run start
+    # test command
+    npm run test
 ```
 
 ## License
