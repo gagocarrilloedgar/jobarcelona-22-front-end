@@ -29,12 +29,18 @@ This project was done using an atomic design, which components folder have speci
 <img align="left" alt="React" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" style="padding-right:10px;" />
 <img align="left" alt="CSS3" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" style="padding-right:10px;" />
 
+<br/>
+
 - React: I used this framework because im studying it, and i want to perform my knowledge (done with create-react-app)
 - Typescript: With React, I used Typescript to do the components more stricted.
 - StoryBook: To documentate the components I've used Story book. It's a library where you can see your components and test it.
 - CSS: In style case, I've used CSS, the reason to not use SASS is about there are only few components, and this components don't require too many stylish.
 
 ## Installation
+
+How to install the project
+
+> This project dependencies were installed with npm
 
 ```shell
     # Clone repository
@@ -43,6 +49,8 @@ This project was done using an atomic design, which components folder have speci
     # install dependencies
     npm install
 ```
+
+Script commands
 
 ```shell
     # run
