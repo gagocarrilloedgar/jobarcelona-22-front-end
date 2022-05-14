@@ -17,14 +17,18 @@ const Card: React.FC<Props> = ({
   description = "Default description",
   tags,
 }) => {
+  // state to check if card is focused
   const [isFocused, setIsFocused] = useState(false);
+
   const handleCardClick = () => {
     setIsFocused(!isFocused);
     // do things here
   };
+
   return (
     <section
       role="button"
+      tabIndex={0}
       onClick={handleCardClick}
       className={isFocused ? "cardWrapper cardFocused" : "cardWrapper"}
     >
