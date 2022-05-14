@@ -1,6 +1,6 @@
-# JOBarcelona '22 | Front
+# JOBarcelona '22 | Front end
 
-Project_name: utilizar nombres que sean facilmente identificables para personas que puedan llegar a tener interés en ese modulo o que estén buscando algo similar.
+Scroll box : utilizar nombres que sean facilmente identificables para personas que puedan llegar a tener interés en ese modulo o que estén buscando algo similar.
 
 > Breve descripción del proyecto, más o menos 15 - 20 palabras:
 

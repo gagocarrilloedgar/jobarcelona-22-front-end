@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-body {
-  margin: 0;
-  font-family: "Poppins", sans-serif;
-}
 /* CSS RESET */
 
 /* Box sizing rules */
@@ -43,6 +39,8 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
 }
 
 /* A elements that don't have a class get default styles */
