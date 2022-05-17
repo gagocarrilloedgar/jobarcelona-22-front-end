@@ -24,6 +24,38 @@ This project was done using an atomic design, which components folder have speci
     │   └── organism                # These components are sections of the page , in this case will be the ScrollBox
     └── ...
 
+### Atoms
+
+- Title: Title of gift card, the html tag selected was &lt;h2&gt;
+- Description: Description of gift card, the html tag selected was &lt;p&gt;
+- Tags: The tags of a gift card, with flex display, the html tag selected was &lt;span&gt;
+
+> all of these atoms only have the children prop.
+
+### Molecules
+
+- Card: Card will contain all the atoms described, which are include in props too, the html tag selected was &lt;article&gt;
+
+> Card Tag props will only accept an array of strings, the array will be iterate to render the tags with the given strings
+
+### Organism
+
+- ScrollBox: The scrollBox would render only cards, the html tag selected was &lt;section&gt;
+
+### Semantic HTML
+
+The final semantic html structure is:
+
+```shell
+<section>
+    <article>
+        <h2>Title</h2>
+        <p>Description</p>
+        <span>Tag1<span>
+    </article>
+</section>
+```
+
 ## Languages and tools
 
 <div>

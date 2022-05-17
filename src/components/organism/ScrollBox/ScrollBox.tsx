@@ -3,7 +3,7 @@ import React from "react";
 import "./ScrollBox.css";
 
 const ScrollBox: React.FC<IScrollBox> = ({ children }) => {
-  return <article className="scrollBoxContainer">{children}</article>;
+  return <section className="scrollBoxContainer">{children}</section>;
 };
 
 export default ScrollBox;

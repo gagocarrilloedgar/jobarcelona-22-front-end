@@ -20,7 +20,7 @@ const Card: React.FC<ICard> = ({
   };
 
   return (
-    <section
+    <article
       role="button"
       tabIndex={0}
       onClick={handleCardClick}
@@ -33,7 +33,7 @@ const Card: React.FC<ICard> = ({
           <CardTag key={tag}>{tag}</CardTag>
         ))}
       </div>
-    </section>
+    </article>
   );
 };
 
