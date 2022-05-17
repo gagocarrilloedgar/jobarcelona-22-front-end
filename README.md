@@ -13,6 +13,12 @@ It basically render a ScrollBox with many cards inside of it, with horizontal sc
 
 <img src="src/assets/FinalResultCapture.png" alt="Proposed challenge" />
 
+
+### Deploy in Vercel
+
+https://jobarcelona-22-front-end.vercel.app/
+
+
 ## Atomic design
 
 This project was done using an atomic design, which components folder have specific structure:
